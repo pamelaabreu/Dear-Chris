@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.heart-box{
+    padding:100px 0;
+}
+  
+  .heart {
+    animation: heartbeat 1s infinite;
+    background-color: #e91e63;
+    display: inline-block;
+    /* margin: 0 10px; */
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    /* position: absolute;  */
+    left: 9%; top: 45%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: #e91e63;
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+  }
+  
+  .heart:before {
+    top: -25px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 25px;
+    top: 0;
+  }
+  
+  @keyframes heartbeat
+  {
+    0%
+    {
+      transform: scale( 1 )
+        rotate(-45deg);    
+    }
+    20%
+    {
+      transform: scale( 1.15 )
+        rotate(-45deg);  
+    }
+    /* 40%
+    {
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }     */
+  }
+
+
+  .background {
+      width: 100%;
+      height: 5000px;
+
+      background-repeat: round;
+      background-size: contain;
+      background-image: url("https://media.giphy.com/media/xTcnT2ZYSaCTdkTSmI/giphy.gif");
+  }
+
+  h1, h2{
+    font-family: 'Merriweather', serif;
+    color: #FF8BA5;
+    font-size: 50px;
+  }
+
+  h2 {
+      font-style: italic;
+  }
+
+  p {
+    font-family: 'Merriweather', serif;
+    color: #9e6f5e;
+    font-size: 25px;
+  }
+ 
+  .block {
+      border-left: 3px solid #b700ff;
+      margin-left: 50px;
+      margin-right: 50%;
+      padding: 30px;
+  }
